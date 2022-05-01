@@ -5,11 +5,10 @@
 }
 
 html {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#main {
 
-}
+#main {}
 
 .text-while {
     color: #fff;
@@ -18,6 +17,7 @@ html {
 .clear {
     clear: both;
 }
+
 #header {
     height: 46px;
     background-color: #000;
@@ -42,7 +42,7 @@ html {
     color: #fff;
     line-height: 46px;
     font-size: 16px;
-    
+
 }
 
 #nav {
@@ -52,7 +52,8 @@ html {
 #nav .subnav {
     list-style-type: none;
 }
-#nav > li {
+
+#nav>li {
     display: inline-block;
 }
 
@@ -60,9 +61,9 @@ html {
     position: relative;
 }
 
-#nav > li > a {
+#nav>li>a {
     color: #fff;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 #nav li a {
@@ -70,15 +71,15 @@ html {
     line-height: 46px;
     padding: 0 24px;
     display: block;
-    
+
 }
 
-#nav li:hover .subnav{
+#nav li:hover .subnav {
     display: block;
 }
 
 #nav .subnav li:hover a,
-#nav > li:hover > a {
+#nav>li:hover>a {
     background-color: #ccc;
     color: #000;
 }
@@ -88,7 +89,7 @@ html {
     position: absolute;
     background-color: #fff;
     color: #000;
-    box-shadow: 0 0 10px rgba(0, 0 ,0 ,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
     min-width: 160px;
     top: 100%;
@@ -100,8 +101,9 @@ html {
     padding: 0 16px;
     line-height: 38px;
 
-    
+
 }
+
 #nav .nav-arrow-down {
     font-size: 14px;
     padding: 0 8px;
@@ -110,7 +112,7 @@ html {
 
 
 #slider {
-    margin-top: 46px;   
+    margin-top: 46px;
     padding-top: 50%;
     background: url('/assets/img/slider/chicago.jpg') top center / cover no-repeat;
     position: relative;
@@ -126,7 +128,7 @@ html {
 
 #slider .text-heading {
     font-weight: 500;
-   font-size: 24px;
+    font-size: 24px;
 }
 
 #slider .text-description {
@@ -134,18 +136,16 @@ html {
     font-size: 15px;
 }
 
-#content {
+#content {}
 
-}
-
-#content .content-section{
+#content .content-section {
     width: 800px;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
 }
 
-#content .section-heading{
+#content .section-heading {
     font-size: 30px;
     font-weight: 500;
     text-align: center;
@@ -166,6 +166,7 @@ html {
     text-align: justify;
     line-height: 1.6;
 }
+
 #content .member-item {
     float: left;
     margin-top: 47px;
@@ -175,7 +176,7 @@ html {
 
 #content .member-name {
     font-size: 15px;
-    
+
     padding: 15px 0;
 }
 
@@ -195,20 +196,20 @@ html {
 }
 
 .ticket-list li {
-   font-size: 15px;
-   padding: 11px 16px;
-   border-bottom: 1px solid #ddd;
-   color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
 }
 
-.ticket-list .sold-out{
+.ticket-list .sold-out {
     padding: 3px 4px;
     background-color: #f44336;
     margin-left: 16px;
     color: #fff;
 }
 
-.ticket-list .quantity{
+.ticket-list .quantity {
     color: #fff;
     background-color: black;
     float: right;
@@ -228,11 +229,13 @@ html {
     padding-bottom: 48px;
 
 }
+
 .place-item {
     float: left;
     width: 33.333333%;
     padding: 0 8px;
 }
+
 .place-img {
     width: 100%;
     display: block;
@@ -253,7 +256,7 @@ html {
 .place-heading {
     font-size: 15px;
     margin: 15px 0px;
-    
+
 }
 
 .place-time {
@@ -274,11 +277,12 @@ html {
     text-decoration: none;
     padding: 11px 16px;
     margin: 0px 0px 15px;
-    text-align:center;
+    text-align: center;
     display: inline-block;
 
 
 }
+
 .palce-buy-btn:hover {
     /* margin: 15px 0px; */
     background-color: #ccc;
@@ -286,15 +290,104 @@ html {
 
 
 }
-#flooter {
 
-}
+#flooter {}
+
 .modal {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
+.modal-container {
+    background: #fff;
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+    
+    position: relative;
+    
+}
+
+header.modal-header {
+    background: #009688;
+    width: 100%;
+    display: flex;
+    height: 129px;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.modal-heading-icon {
+    margin-right: 16px;
+
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+
+.modal-clode:hover  {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.modal-input {
+    background-color: #fff;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 24px;
+    
+}
+
+#modal-pay {
+    color: #fff;
+    background: #009688;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#modal-pay:hover {
+    opacity: 0.9;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
