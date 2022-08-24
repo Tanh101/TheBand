@@ -11,8 +11,33 @@ html {
 #main {}
 
 .text-while {
-    color: #fff;
+    color: #fff !important;
 }
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.text-center {
+    text-align:  center !important;
+}
+
+
 
 .clear {
     clear: both;
@@ -136,7 +161,9 @@ html {
     font-size: 15px;
 }
 
-#content {}
+#content {
+
+}
 
 #content .content-section {
     width: 800px;
@@ -167,10 +194,11 @@ html {
     line-height: 1.6;
 }
 
+
+#content .members-list {
+    margin-top: 48px;
+}
 #content .member-item {
-    float: left;
-    margin-top: 47px;
-    width: calc(100%/3);
     text-align: center;
 }
 
@@ -225,16 +253,13 @@ html {
 /* .place */
 
 .place-list {
-    margin: 32px -8px 0;
+    /* margin: 32px -8px 0; */
+    margin-top: 32px;
     padding-bottom: 48px;
 
 }
 
-.place-item {
-    float: left;
-    width: 33.333333%;
-    padding: 0 8px;
-}
+
 
 .place-img {
     width: 100%;
