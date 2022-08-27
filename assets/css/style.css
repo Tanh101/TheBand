@@ -13,6 +13,7 @@ html {
 .text-while {
     color: #fff !important;
 }
+
 .row {
     margin-left: -8px;
     margin-right: -8px;
@@ -50,12 +51,13 @@ html {
 .mt-16 {
     margin-top: 16px;
 }
+
 .pd-10 {
     padding: 10px;
 }
 
 .text-center {
-    text-align:  center !important;
+    text-align: center !important;
 }
 
 
@@ -182,9 +184,7 @@ html {
     font-size: 15px;
 }
 
-#content {
-
-}
+#content {}
 
 #content .content-section {
     width: 800px;
@@ -220,6 +220,7 @@ html {
 #content .members-list {
     margin-top: 48px;
 }
+
 #content .member-item {
     text-align: center;
 }
@@ -326,6 +327,8 @@ html {
     margin: 0px 0px 15px;
     text-align: center;
     display: inline-block;
+    cursor: pointer;
+    border: none;
 
 
 }
@@ -345,13 +348,16 @@ html {
 .contact-info {
     font-size: 18px;
     /* display: inline-block; */
-    line-height: 1.5    ;
+    line-height: 1.5;
 
 }
 
 .contact-info i[class*="ti-"] {
     width: 30px;
+    width: 100%;
+    display: inline-block;
 }
+
 .contact-form {
     font-size: 15px;
 }
@@ -365,17 +371,74 @@ html {
 
 .message {
     padding: 10px;
+    width: 100%;
 }
+
 .form-submit-btn {
     background-color: #000;
     color: #fff;
+    display: inline-block;
+    float: right;
+    padding: 10px 12px;
+    margin: 16px 0px;
+    cursor: pointer;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font: inherit;
+}
+
+.form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+
+
+}
+
+
+
+
+#flooter {
+    background-color: #f1f1f1;
+}
+
+.powered {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    color: #757575;
+    
+}
+
+.social-list {
+    text-align: center;
+    padding: 80px 0 15px;
+    
+}
+
+.social-list a {
+    text-decoration: none;
     
 }
 
 
+.social-list i[class*="ti-"] {
+    padding: 3px;
+    /* font-size: ;
+    */
+    /* box-shadow: 0 3px tomato; */
+    /* font-size: inherit; */
+    color: #757575;
+    font-size: 20px;
+    text-decoration: none;
+}
 
-
-#flooter {}
+.map {
+    width: 100%;
+}
 
 .modal {
     position: fixed;
@@ -400,7 +463,7 @@ html {
     width: 900px;
     min-height: 200px;
     max-width: calc(100% - 32px);
-    
+
     position: relative;
     animation: modalFadeIn ease .4s;
 }
@@ -434,7 +497,7 @@ header.modal-header {
 
 }
 
-.modal-clode:hover  {
+.modal-clode:hover {
     opacity: 1;
 }
 
@@ -455,7 +518,7 @@ header.modal-header {
     padding: 10px;
     border: 1px solid #ccc;
     margin-bottom: 24px;
-    
+
 }
 
 #modal-pay {
@@ -488,6 +551,7 @@ header.modal-header {
         transform: translateY(-140px);
 
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
