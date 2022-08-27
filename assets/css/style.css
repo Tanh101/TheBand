@@ -436,6 +436,10 @@ html {
     text-decoration: none;
 }
 
+.social-list i[class*="ti-"]:hover {
+    opacity: 0.8;
+}
+
 .map {
     width: 100%;
 }
